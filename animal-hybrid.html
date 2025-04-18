@@ -70,7 +70,7 @@
     <!-- Image and description will be injected here -->
   </div>
 
-  <a href="scratch.html">← Back to Surfing Page</a>
+  <a href="surfing.html">← Back to Scratch Page</a>
 
   <script>
     function generateHybrid() {
@@ -83,16 +83,16 @@
       }
 
       const resultDiv = document.getElementById('result');
-      const hybridName = ${animal1}-${animal2} Hybrid;
+      const hybridName = `${animal1}-${animal2} Hybrid`;
 
       // Simulated AI image (you can replace this with real image generation later)
-      const imgURL = https://api.dicebear.com/7.x/thumbs/svg?seed=${animal1}${animal2};
+      const imgURL = `https://api.dicebear.com/7.x/thumbs/svg?seed=${animal1}${animal2}`;
 
-      resultDiv.innerHTML = 
+      resultDiv.innerHTML = `
         <h2>Your Hybrid: ${hybridName}</h2>
         <img src="${imgURL}" alt="Hybrid of ${animal1} and ${animal2}">
         <p>This is what a ${animal1}-${animal2} hybrid might look like!</p>
-      ;
+      `;
     }
   </script>
 </body>

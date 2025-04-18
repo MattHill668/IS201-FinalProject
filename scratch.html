@@ -1,62 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surfing</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #1e3a3a;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        h1, h2 {
-            color: #00bfae;
-        }
-        #surfing-info {
-            margin-top: 20px;
-        }
-        #surfing-video {
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surfing</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Surfing Passion</h1>
-    </header>
-    
-    <div id="surfing-info">
-        <h2>Why do I Love Surfing?</h2>
-        <p>Surfing is not just a sport, for me, it's my way to disconnect!</p>
+<body id="top">
+  <header>
+    <h1>Surfing Passion</h1>
+    <nav><a href="index.html">← Back to Home</a></nav>
+  </header>
+
+  <!-- Anchor jump -->
+  <p><a href="#favorite-spots">Jump to Favorite Surf Spots ↓</a></p>
+
+  <section id="surfing-info">
+    <h2>Why do I Love Surfing?</h2>
+    <p>Surfing is not just a sport—it's my way to disconnect!</p>
+    <ul>
+      <li>It connects you with nature.</li>
+      <li>It’s a great workout.</li>
+      <li>It’s a mental challenge.</li>
+    </ul>
+
+    <ol>
+      <li id="favorite-spots">My Favorite Surfing Spots
         <ul>
-            <li>It connects you with nature.</li>
-            <li>It’s a great workout.</li>
-            <li>It’s a mental challenge.</li>
+          <li>55th St, Newport Beach, CA</li>
+          <li>Waikiki Beach, Oahu, HI</li>
+          <li>Newport Beach Pier, Newport Beach, CA</li>
         </ul>
+      </li>
+    </ol>
+  </section>
 
-        <ol>
-            <li>My Favorite Surfing Spots</li>
-            <ul>
-                <li>55th St, Newport Beach, CA</li>
-                <li>Waikiki Beach, Oahu, HI</li>
-                <li>Newport Beach Pier, Newport Beach, CA</li>
-            </ul>
-        </ol>
-    </div>
+  <section id="surfing-video">
+    <h2>My Favorite Surfer: Kelly Slater</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mHhR2BuJ4tk" 
+            title="Surfing video" frameborder="0" allowfullscreen></iframe>
+  </section>
 
-    <div id="surfing-video">
-        <h2>My Favorite Surfer: Kelly Slater</h2>
-        <!-- Embed YouTube Video -->
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=mHhR2BuJ4tk" title="Surfing video" frameborder="0" allowfullscreen></iframe>
-    </div>
+  <section class="highlight">
+    <h2>Surfing Photo</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Surfing_in_Hawaii.jpg" 
+         alt="Surfing in Hawaii" width="400">
+  </section>
 
-    <div id="surfing-info">
-        <h2>Surfing Locations Around the World</h2>
-        <div style="width: 100%; background-color: #333; padding: 20px; margin-top: 20px;">
-            <p>Some of the most famous surfing locations around the world are shown here!</p>
-        </div>
+  <section class="boxes">
+    <div class="box box1">🌊 Morning Surf</div>
+    <div class="box box2">☀️ Midday Waves</div>
+    <div class="box box3">🌅 Sunset Shred</div>
+  </section>
+
+  <section>
+    <h2>Surfing Locations Around the World</h2>
+    <div class="highlight">
+      <p>Some of the most famous surfing locations around the world are shown here!</p>
     </div>
+  </section>
+
+  <section>
+    <h2>Surfing Trends Tableau Graph</h2>
+    <div class='tableauPlaceholder' id='viz168'>
+      <object class='tableauViz' width='600' height='500'
+              data='https://public.tableau.com/views/SurfingData/Dashboard1'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+      </object>
+    </div>
+  </section>
+
+  <footer>
+    <p><a href="#top">↑ Back to Top</a></p>
+  </footer>
 </body>
 </html>
+

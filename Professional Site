@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Dark Theme */
+        body {
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar a {
+            color: #f1f1f1 !important;
+        }
+        .card {
+            background-color: #222;
+            border: none;
+        }
+        .card-header {
+            background-color: #444;
+            color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Your Name</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="scratch.html">Scratch Page</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resume Section -->
+    <div class="container mt-5" id="resume">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Education
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Current Student at Brigham Young University</h5>
+                        <p class="card-text">High School Diploma from Santiago High School, Corona, CA June 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Experience
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Sales Representative for Grit Marketing March 2025 - September 2025 Grit Marketing, Lindon, UT</li>
+                            <li>LDS Missionary July 2022 - June 2024 Richmond, Virginia, Spanish Speaking Program</li>
+                            <li>Escape Room Gamemaster August 2020 - July 2022 Over The Moon Escape Rooms, Corona, CA</li>
+                            <li>Swim Teacher/Lifeguard June 2020 - August 2021 (Summers) Corona City Pool, Corona, CA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        Skills
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Leadership and Management</li>
+                            <li>Communication and Collaboration</li>
+                            <li>HTML, CSS, JavaScript</li>
+                            <li>Microsoft Office Suite</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Awards Section -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        Leadership Experience
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                <li>Elder's Quorum President, September 2024 - May 2025</li>
+                <li>LDS Mission Zone Leader, January 2024 - June 2024</li>
+                <li>LDS Mission District Leader, July 2023 - January 2024</li>
+                <li>Varsity Boys Volleyball Team Captain (2022)</li>
+                <li>Club Volleyball Team Captain (2022)</li>
+                <li>Junior Varsity Team Captain (2020)</li>
+                <li>Eagle Scout (2019)</li>
+                <li>Baritone Choir President (2019)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animal Hybrid Generator</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #00bfae;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 200px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #00bfae;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    #result {
+      margin-top: 40px;
+    }
+
+    img {
+      margin-top: 20px;
+      width: 400px;
+      max-width: 100%;
+      border: 2px solid #00bfae;
+      border-radius: 10px;
+    }
+
+    a {
+      color: #00bfae;
+      display: inline-block;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AI Animal Hybrid Generator</h1>
+  <p>Enter two animals to generate your custom hybrid creature:</p>
+
+  <input type="text" id="animal1" placeholder="First animal">
+  <input type="text" id="animal2" placeholder="Second animal">
+  <br>
+  <button onclick="generateHybrid()">Generate</button>
+
+  <div id="result">
+    <!-- Image and description will be injected here -->
+  </div>
+
+  <a href="surfing.html">← Back to Scratch Page</a>
+
+  <script>
+    function generateHybrid() {
+      const animal1 = document.getElementById('animal1').value.trim();
+      const animal2 = document.getElementById('animal2').value.trim();
+
+      if (animal1 === '' || animal2 === '') {
+        alert('Please enter two animals!');
+        return;
+      }
+
+      const resultDiv = document.getElementById('result');
+      const hybridName = `${animal1}-${animal2} Hybrid`;
+
+      // Simulated AI image (you can replace this with real image generation later)
+      const imgURL = `https://api.dicebear.com/7.x/thumbs/svg?seed=${animal1}${animal2}`;
+
+      resultDiv.innerHTML = `
+        <h2>Your Hybrid: ${hybridName}</h2>
+        <img src="${imgURL}" alt="Hybrid of ${animal1} and ${animal2}">
+        <p>This is what a ${animal1}-${animal2} hybrid might look like!</p>
+      `;
+    }
+  </script>
+</body>
+</html>
